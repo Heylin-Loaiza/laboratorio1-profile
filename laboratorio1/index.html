@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <title>Profile</title>
+</head>
+<body>
+  <div class="main-container">
+    <header>
+      <nav>
+        <ul class="navegation">
+          <li>
+            <img src="./images/logo.png">
+          </li>
+          <li>
+            <button class="sidebar-home"><span class="visually-hidden">home</span></button>
+          </li>
+          <li>
+            <button class="sidebar-notification"><span class="visually-hidden">notification</span></button>
+          </li>
+          <li>
+            <button class="sidebar-calendar"><span class="visually-hidden">calendar</span></button>
+          </li>
+          <li>
+            <button class="sidebar-chart"><span class="visually-hidden">show chart</span></button>
+          </li>
+          <li>
+            <button class="sidebar-profile"><span class="visually-hidden">profile</span></button>
+          </li>
+          <li>
+            <button class="sidebar-settings"><span class="visually-hidden">settings</span></button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- sidebar settings -->
+    <section class="second-sidebar">
+      <div class="second-sidebar-header">
+        <button class="return-button"><span class="visually-hidden">return settings</span></button>
+        <h2>Settings</h2>
+      </div>
+      <ul class="second-sidebar-list">
+        <li><button class="second-sidebar-profile">Edit profile</button></li>
+        <li><button class="second-sidebar-notification">Notification</button></li>
+        <li><button class="second-sidebar-security">Security</button></li>
+        <li><button class="second-sidebar-appearance">Appearance</button></li>
+        <li><button class="second-sidebar-help">Help</button></li>
+      </ul>
+    </section>
+    <!-- edit profile -->
+    <main>
+      <div class="main-header">
+        <h1>Edit profile</h1>
+        <img src="./images/picture.png">
+      </div>
+      <form method="post">
+        <div class="flex-container">
+          <div>
+            <label for="name">First Name</label>
+            <input id="name" type="text" name="name" placeholder="Mehrab" required>
+          </div>
+          <div>
+            <label for="last-name">Last Name</label>
+            <input id="last-name" type="text" name="last_name" placeholder="Bozorgi" required>
+          </div>
+        </div>
+        <label for="email">Email</label>
+        <input id="email" type="email" name="email" placeholder="Mehrabbozorgi.business@gmail.com" required>
+        <label for="address">Address</label>
+        <input id="address" type="text" name="address" placeholder="33062 Zbncak isle" required>
+        <label for="number">Contact Number</label>
+        <input id="number" type="number" name="contact_number" placeholder="58077.79" required>
+        <div class="flex-container">
+          <div>
+            <label for="city">City</label>
+            <select id="city" name="city">
+              <option value="0">Mehrab</option>
+              <option value="1">Mehrab</option>
+            </select>
+          </div>
+          <div>
+            <label for="state">State</label>
+            <select id="state" name="state">
+              <option value="0">Bozorgi</option>
+              <option value="1">Bozorgi</option>
+            </select>
+          </div>
+        </div>
+        <label for="password">Password</label>
+        <input id="password" type="password" name="password" placeholder="sbdfbnd65sfdvbs" required>
+        <button type="reset" class="reset-button">Cancel</button>
+        <button type="submit" class="submit-button">Save</button>
+      </form>
+    </main>
+    <div class="tools">
+      <button class="notification"><span class="visually-hidden">notification</span></button>
+      <button class="profile"><span class="visually-hidden">profile</span></button>
+    </div>
+  </div>
+</body>
+</html>
